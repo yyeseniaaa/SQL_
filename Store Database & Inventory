@@ -1,0 +1,35 @@
+CREATE TABLE PastryShopInventory (id integer primary key, name text, price integer, quantity Text, Style Text);
+
+INSERT into PastryShopInventory values
+( 1, "Chocolate Slice", 4.50, 24, "cake");
+INSERT into PastryShopInventory values
+( 2, "Confetti Slice", 4.50, 26, "cake");
+INSERT into PastryShopInventory values
+( 3, "Strawberry shortcake", 5.00, 18, "cake");
+INSERT into PastryShopInventory values
+( 4, "Chocolate Chunk", 2.50, 32, "cookie");
+INSERT into PastryShopInventory values
+( 5, "Snickerdoodle", 2.00, 24, "cookie");
+INSERT into PastryShopInventory values
+( 6, "PeanutButter", 2.50, 16, "cookie");
+INSERT into PastryShopInventory values
+( 7, "Everything but the kitchen Sink", 3.00, 12,"cookie");
+INSERT into PastryShopInventory values
+( 8, "Chunky Fudge", 4.00, 16, "brownie");
+INSERT into PastryShopInventory values
+( 9, "Cranberry Blondies", 4.00, 12, "brownie");
+INSERT into PastryShopInventory values
+( 10, "Zuchinni Brownies", 4.00, 8, "brownie");
+INSERT into PastryShopInventory values
+( 11, "Carrot cream cheese", 3.50, 18, "cupcake");
+INSERT into PastryShopInventory values
+( 12, "Vanilla Vanilla", 3.00, 16, "cupcake");
+INSERT into PastryShopInventory values
+( 13, "Chocolate Ganache", 3.50, 18, "cupcake");
+INSERT into PastryShopInventory values
+( 14, "Red Velevet Cream Cheese", 3.50, 12, "cupcake");
+INSERT into PastryShopInventory values
+( 15, "Birthday Vanilla", 3.00, 10, "cupcake");
+
+Select * From PastryShopInventory Order by Price;
+Select style, SUM(Quantity) from PastryShopInventory group by style; 
